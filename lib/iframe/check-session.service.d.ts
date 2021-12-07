@@ -1,0 +1,34 @@
+import { NgZone } from '@angular/core';
+import { ConfigurationProvider } from '../config/config.provider';
+import { LoggerService } from '../logging/logger.service';
+import { PublicEventsService } from '../public-events/public-events.service';
+import { StoragePersistanceService } from '../storage/storage-persistance.service';
+import { IFrameService } from './existing-iframe.service';
+export declare class CheckSessionService {
+    private storagePersistanceService;
+    private loggerService;
+    private iFrameService;
+    private zone;
+    private eventService;
+    private readonly configurationProvider;
+    private checkSessionReceived;
+    private scheduledHeartBeatRunning;
+    private lastIFrameRefresh;
+    private outstandingMessages;
+    private heartBeatInterval;
+    private iframeRefreshInterval;
+    private checkSessionChangedInternal$;
+    get checkSessionChanged$(): import("rxjs").Observable<boolean>;
+    constructor(storagePersistanceService: StoragePersistanceService, loggerService: LoggerService, iFrameService: IFrameService, zone: NgZone, eventService: PublicEventsService, configurationProvider: ConfigurationProvider);
+    isCheckSessionConfigured(): boolean;
+    start(): void;
+    stop(): void;
+    serverStateChanged(): boolean;
+    private init;
+    private pollServerSession;
+    private clearScheduledHeartBeat;
+    private messageHandler;
+    getExistingIframe(): HTMLIFrameElement;
+    private bindMessageEventToIframe;
+    private getOrCreateIframe;
+}

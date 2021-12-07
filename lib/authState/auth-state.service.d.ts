@@ -1,0 +1,31 @@
+import { ConfigurationProvider } from '../config/config.provider';
+import { LoggerService } from '../logging/logger.service';
+import { PublicEventsService } from '../public-events/public-events.service';
+import { StoragePersistanceService } from '../storage/storage-persistance.service';
+import { TokenValidationService } from '../validation/token-validation.service';
+import { AuthorizationResult } from './authorization-result';
+export declare class AuthStateService {
+    private storagePersistanceService;
+    private loggerService;
+    private publicEventsService;
+    private configurationProvider;
+    private tokenValidationService;
+    private authorizedInternal$;
+    private authState;
+    get authorized$(): import("rxjs").Observable<boolean>;
+    constructor(storagePersistanceService: StoragePersistanceService, loggerService: LoggerService, publicEventsService: PublicEventsService, configurationProvider: ConfigurationProvider, tokenValidationService: TokenValidationService);
+    setAuthorizedAndFireEvent(): void;
+    setUnauthorizedAndFireEvent(): void;
+    initStateFromStorage(): void;
+    updateAndPublishAuthState(authorizationResult: AuthorizationResult): void;
+    setAuthorizationData(accessToken: any, idToken: any): void;
+    getAccessToken(): string;
+    getIdToken(): string;
+    getRefreshToken(): string;
+    areAuthStorageTokensValid(): boolean;
+    setAuthResultInStorage(authResult: any): void;
+    hasIdTokenExpired(): boolean;
+    hasAccessTokenExpiredIfExpiryExists(): boolean;
+    private getCurrentlyPersistedAuthState;
+    private persistAuthStateInStorage;
+}

@@ -1,0 +1,80 @@
+{
+  "_from": "angular-auth-oidc-client@11.0.2",
+  "_id": "angular-auth-oidc-client@11.0.2",
+  "_inBundle": false,
+  "_integrity": "sha512-SORmPAprnovvg4ch0MO8Teny3Ji+UJOGrDQxHV+Fv56TDNr4Nauu2ShiiaRy3BEO6xFG5WkVAHpOtdY27Bcynw==",
+  "_location": "/angular-auth-oidc-client",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "angular-auth-oidc-client@11.0.2",
+    "name": "angular-auth-oidc-client",
+    "escapedName": "angular-auth-oidc-client",
+    "rawSpec": "11.0.2",
+    "saveSpec": null,
+    "fetchSpec": "11.0.2"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/angular-auth-oidc-client/-/angular-auth-oidc-client-11.0.2.tgz",
+  "_shasum": "4fa43e538b50a1bcd45f5a2414ff1b6f07261782",
+  "_spec": "angular-auth-oidc-client@11.0.2",
+  "_where": "D:\\Clients\\CCubeApplications\\CCube.PatientPortal\\CCube.PatientPortal.WebApp",
+  "author": {
+    "name": "Damien Bowden & Fabian Gosebrink"
+  },
+  "bugs": {
+    "url": "https://github.com/damienbod/angular-auth-oidc-client/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "common-tags": "^1.8.0",
+    "jsrsasign-reduced": "^8.0.15"
+  },
+  "deprecated": false,
+  "description": "Angular Lib for OpenID Connect & OAuth2",
+  "es2015": "fesm2015/angular-auth-oidc-client.js",
+  "esm2015": "esm2015/angular-auth-oidc-client.js",
+  "esm5": "esm5/angular-auth-oidc-client.js",
+  "fesm2015": "fesm2015/angular-auth-oidc-client.js",
+  "fesm5": "fesm5/angular-auth-oidc-client.js",
+  "homepage": "https://github.com/damienbod/angular-auth-oidc-client",
+  "keywords": [
+    "angular",
+    "oidc",
+    "oauth2",
+    "openid",
+    "security",
+    "typescript",
+    "openidconnect",
+    "auth",
+    "authn",
+    "authentication",
+    "identity",
+    "certified",
+    "oauth",
+    "authorization"
+  ],
+  "license": "MIT",
+  "main": "bundles/angular-auth-oidc-client.umd.js",
+  "metadata": "angular-auth-oidc-client.metadata.json",
+  "module": "fesm5/angular-auth-oidc-client.js",
+  "name": "angular-auth-oidc-client",
+  "peerDependencies": {
+    "rxjs": ">= 6.0.0",
+    "@angular/core": ">= 8.0.0",
+    "@angular/common": ">= 8.0.0",
+    "@angular/router": ">= 8.0.0",
+    "tslib": "^1.10.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/damienbod/angular-auth-oidc-client.git"
+  },
+  "sideEffects": false,
+  "typings": "angular-auth-oidc-client.d.ts",
+  "version": "11.0.2"
+}

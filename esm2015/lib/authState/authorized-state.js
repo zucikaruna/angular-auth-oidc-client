@@ -1,0 +1,7 @@
+export var AuthorizedState;
+(function (AuthorizedState) {
+    AuthorizedState["Authorized"] = "Authorized";
+    AuthorizedState["Unauthorized"] = "Unauthorized";
+    AuthorizedState["Unknown"] = "Unknown";
+})(AuthorizedState || (AuthorizedState = {}));
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiYXV0aG9yaXplZC1zdGF0ZS5qcyIsInNvdXJjZVJvb3QiOiJuZzovL2FuZ3VsYXItYXV0aC1vaWRjLWNsaWVudC8iLCJzb3VyY2VzIjpbImxpYi9hdXRoU3RhdGUvYXV0aG9yaXplZC1zdGF0ZS50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxNQUFNLENBQU4sSUFBWSxlQUlYO0FBSkQsV0FBWSxlQUFlO0lBQ3ZCLDRDQUF5QixDQUFBO0lBQ3pCLGdEQUE2QixDQUFBO0lBQzdCLHNDQUFtQixDQUFBO0FBQ3ZCLENBQUMsRUFKVyxlQUFlLEtBQWYsZUFBZSxRQUkxQiIsInNvdXJjZXNDb250ZW50IjpbImV4cG9ydCBlbnVtIEF1dGhvcml6ZWRTdGF0ZSB7XHJcbiAgICBBdXRob3JpemVkID0gJ0F1dGhvcml6ZWQnLFxyXG4gICAgVW5hdXRob3JpemVkID0gJ1VuYXV0aG9yaXplZCcsXHJcbiAgICBVbmtub3duID0gJ1Vua25vd24nLFxyXG59XHJcbiJdfQ==
